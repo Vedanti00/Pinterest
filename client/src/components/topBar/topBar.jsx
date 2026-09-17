@@ -1,9 +1,19 @@
-import React from 'react'
+import React from "react";
+import UserButton from "../userButton/userButton";
+import "./topBar.css";
 
-function topBar() {
+const TopBar = () => {
   return (
-    <div>topBar</div>
-  )
-}
+    <div className="topBar">
+      {/* SEARCH */}
+      <div className="search">
+        <img src="/general/search.svg" alt="search-icon" />
+        <input type="text" placeholder="Search" />
+      </div>
+      {/* USER */}
+      <UserButton />
+    </div>
+  );
+};
 
-export default topBar
+export default TopBar;

@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
 
-function rightBar() {
-  return (
-    <div>rightBar</div>
-  )
+function RightBar() {
+  return <div>rightBar</div>;
 }
 
-export default rightBar
+export default RightBar;
