@@ -1,8 +1,8 @@
 import "./app.css";
-import LeftBar from "./components/leftBar/leftBar";
-import RightBar from "./components/rightBar/rightBar";
-import TopBar from "./components/topBar/topBar";
-import Gallery from "./components/gallery/gallery";
+import LeftBar from "./components/leftBar/LeftBar";
+import RightBar from "./components/rightBar/RightBar";
+import TopBar from "./components/topBar/TopBar";
+import Gallery from "./components/gallery/Gallery";
 
 const App = () => {
   return (

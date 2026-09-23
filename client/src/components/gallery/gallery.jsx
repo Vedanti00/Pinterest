@@ -1,5 +1,5 @@
 import React from "react";
-import GalleryItem from "../galleryItem/galleryItem";
+import GalleryItem from "../galleryItem/GalleryItem";
 import "./gallery.css";
 
 // TEMPORARY DATA
