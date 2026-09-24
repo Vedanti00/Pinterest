@@ -156,13 +156,13 @@ const items = [
   },
   {
     id: 26,
-    media: "/pins/pin26.jpeg",
+    media: "/pins/pin1.jpeg",
     width: 1260,
     height: 1260,
   },
   {
     id: 27,
-    media: "/pins/pin27.jpeg",
+    media: "/pins/pin2.jpeg",
     width: 1260,
     height: 1260,
   },
