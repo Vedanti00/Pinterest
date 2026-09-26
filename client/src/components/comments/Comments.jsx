@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import Images from "../images/Images";
+import EmojiPicker from "emoji-picker-react";
 import "./comments.css";
 
 const Comments = () => {
+
+    const [open, setOpen] = useState(false);
   return (
     <div className="comments">
       <div className="commentList">
@@ -27,12 +30,12 @@ const Comments = () => {
               nunc at tellus ornare, quis pharetra nisl lobortis. Donec quis
               eros egestas, lobortis quam mattis, elementum metus. Morbi
               fermentum sagittis lacus. Aenean eget malesuada tortor, id
-              eleifend nibh. Cras non velit tellus. Maecenas magna massa, aliquet eu euismod eu, rhoncus
-              vitae est. Duis commodo arcu non tincidunt porttitor. Ut tincidunt
-              nunc at tellus ornare, quis pharetra nisl lobortis. Donec quis
-              eros egestas, lobortis quam mattis, elementum metus. Morbi
-              fermentum sagittis lacus. Aenean eget malesuada tortor, id
-              eleifend nibh. Cras non velit tellus.
+              eleifend nibh. Cras non velit tellus. Maecenas magna massa,
+              aliquet eu euismod eu, rhoncus vitae est. Duis commodo arcu non
+              tincidunt porttitor. Ut tincidunt nunc at tellus ornare, quis
+              pharetra nisl lobortis. Donec quis eros egestas, lobortis quam
+              mattis, elementum metus. Morbi fermentum sagittis lacus. Aenean
+              eget malesuada tortor, id eleifend nibh. Cras non velit tellus.
             </p>
             <span className="commentTime">2 hours ago</span>
           </div>
@@ -64,7 +67,10 @@ const Comments = () => {
         <form className="commentForm">
           <input type="text" placeholder="Write a comment..." />
           <div className="emoji">
-            <div>😊</div>
+            <div onClick={() => setOpen((prev) => !prev)}>😊</div>
+            {open && <div className="emojiPicker">
+              <EmojiPicker />
+            </div>}
           </div>
         </form>
       </div>
