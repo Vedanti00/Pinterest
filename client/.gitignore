@@ -1,3 +1,11 @@
+# ==========================================
+# Operating System Files
+# ==========================================
+# Windows system files
+desktop.ini
+Thumbs.db
+ehthumbs.db
+
 # Logs
 logs
 *.log
