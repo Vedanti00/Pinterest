@@ -12,7 +12,7 @@ const pinSchema = new Schema(
       required: true,
     },
     height: {
-      Nymber: String,
+      type: Number,
       required: true,
     },
     title: {
